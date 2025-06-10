@@ -1,0 +1,187 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212; /* very dark gray */
+  color: #f0f0f0; /* light text */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* .navbar-brand:hover {
+  color: #f539ff; 
+  text-shadow: 0 0 8px rgb(255, 255, 255);
+} */
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #f6dd00ec; 
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: rgb(255, 255, 255); 
+  text-shadow: 0 0 8px rgb(255, 231, 13); 
+}
+
+.navbar-brand {
+  color: #00d0ff; /* neon pink */
+  text-shadow: 0 0 10px #09daff9f;
+}
+
+
+/* About section CSS */
+#intro-section {
+  background-color: #1a1a1a;
+  box-shadow: 0 -1px 10px #39ff14;
+}
+
+
+#intro-section h2 {
+  font-family: 'Inter', sans-serif;
+  color: #0de82a;
+  text-shadow: 0 0 5px #39ff14;
+}
+
+#intro-section p {
+  font-family: 'Inter', sans-serif; 
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #dddddd;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.custom-img {
+  margin-left: 30px;
+  width: 330px;
+  padding: 18px; 
+  border: 3px dashed #27a92f;
+}
+
+.about-section {
+  position: relative; 
+  background: radial-gradient(circle, rgba(22, 84, 254, 0.365), transparent 75%);
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  overflow: hidden; 
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.55); 
+  z-index: 0;
+}
+/* end */
+
+
+
+
+/* Bg image */
+.bg-wrapper {
+  position: relative;
+  background-image: url("media/wallpaper1.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  z-index: 0;
+}
+
+.bg-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* adjust opacity here */
+  z-index: 1;
+}
+
+.bg-wrapper > section {
+  position: relative;
+  z-index: 2; /*content stays above the overlay */
+}
+/* End */
+
+
+/* Project cards */
+
+.card img {
+  /* width: 80%;
+  height: 60%; */
+  /* width: 340px;
+  height: 380px; */
+  width: 90%;
+  align-items: center;
+  display: block;
+  margin: 20px auto 10px auto;
+  border-radius: 10px;
+}
+
+
+.card-img-small {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+}
+
+
+.card {
+  width: 400px;
+  background-color: #1a1a1a; 
+  border: 2px solid #14a5ff; 
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(20, 149, 255, 0.3); /* neon glow */
+  color: #dddddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px; 
+  backdrop-filter: blur(8px);
+  background-color: rgba(26, 26, 26, 0.7); /* semi-transparent background */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(20, 173, 255, 0.8);
+}
+
+.card .card-title {
+  color: #0de82a;
+  font-weight: 600;
+  text-shadow: 0 0 5px #37ff14c8;
+}
+
+.card .card-text {
+  font-size: 0.95rem;
+  color: #cccccc;
+  font-family: 'Inter', sans-serif;
+  text-align: justify;
+
+}
+
+.card .btn-primary {
+  background-color: #37ff14d9;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card .btn-primary:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* End */
