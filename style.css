@@ -58,8 +58,8 @@ body {
   text-justify: inter-word;
 }
 
-.custom-img {
-  margin-left: 30px;
+.dp-img {
+  margin-left: 20px;
   width: 330px;
   padding: 18px; 
   border: 3px dashed #27a92f;
@@ -131,25 +131,27 @@ body {
 }
 
 
-.card-img-small {
+/* .card-img-small {
   width: 90%;
   margin: 0 auto;
   display: block;
-  margin-top: 10px;
-}
+  margin-top: 20px;
+} */
 
 
 .card {
-  width: 400px;
+  /* width: 400px; */
+  width: 85%;
+  /* max-width: 350px; */
   background-color: #1a1a1a; 
   border: 2px solid #14a5ff; 
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(20, 149, 255, 0.3); /* neon glow */
   color: #dddddd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 10px; 
-  backdrop-filter: blur(8px);
-  background-color: rgba(26, 26, 26, 0.7); /* semi-transparent background */
+  /* margin: 20px; */  /* Space between */  
+  backdrop-filter: blur(7px);
+  background-color: rgba(26, 26, 26, 0.5); /* 0.5 transparent bg */
 }
 
 .card:hover {
@@ -184,4 +186,23 @@ body {
   color: #1a1a1a;
 }
 
+
+/* Pr0ject section Slider */
+
+.swiper {
+  position: relative;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-next {
+  right: 350px !important; /* move right arrow position */
+}
+
+.swiper-button-prev {
+  left: 300px !important; /* move left arrow position */
+}
 /* End */
+

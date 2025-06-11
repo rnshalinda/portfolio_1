@@ -19,6 +19,9 @@
         <!-- Intro font -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        
 
 
  
@@ -84,74 +87,105 @@
                     </div>
                     <!-- Right Column -->
                     <div data-aos="fade-left" data-aos-duration="1000" class="col-lg-5 col-md-5 col-sm-12 text-center">
-                        <img src="media/nirmala_Image.jpg" alt="Nirmala" class="custom-img img-fluid rounded-5">
+                        <img src="media/nirmala_Image.jpg" alt="Nirmala" class="dp-img img-fluid rounded-5">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="bg-wrapper">    <!-- bg image -->
+        <div class="bg-wrapper">    <!-- bg image -->
 
             <!-- Projects Section -->
             <section id="projects" class="projects-section">
                 <div class="container">
                     <h2 class="section-title text-center mb-5" data-aos="fade-up">Projects</h2>
 
-                    <!-- Row -->
-                    <div class="row g-4">
+                    <!-- Card Slider -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            
+                            <!-- Project Card 1 -->
+                             <div class="swiper-slide">
+                                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                                    <img class="card-img" src="media/FS_guardian.jpg" class="card-img-top" alt="FireSight Guardian">
+                                    <div class="card-body">
+                                        <h5 class="card-title">FireSight Guardian</h5>
+                                        <p class="card-text">Vision-based ML fire detection using ESP32-CAM & Jetson Nano. Fast, scalable, edge-powered
+                                            system.</p>
+                                        <div class="text-center">
+                                            <a href="https://github.com/rnshalinda/FireSight_Guardian_ML_FireDetection_System" class="btn btn-primary">Check</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2  -->
+                            <div class="swiper-slide">
+                                <!-- <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300"> -->
+                                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="card-img">
+                                        <img src="media/epuck.PNG" alt="e-puck">
+                                        <img src="media/ezgif-1.gif" alt="navigation-sims">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">E-Puck Maze Explorer Robot</h5>
+                                        <p class="card-text"> E-Puck robot autonomously navigates a maze to detect colored walls in a specific sequence, 
+                                            showcasing path planning & PID control algorithm.</p>
+                                        <div class="text-center">
+                                            <a href="https://github.com/rnshalinda/Webots_MazeChallenge_Epuck_ColorNav" class="btn btn-primary">Check</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 3 -->
+                            <div class="swiper-slide">
+                                <!-- <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300"> -->
+                                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="card-img">
+                                        <img class="card-img" src="https://private-user-images.githubusercontent.com/133548503/260993694-d0bd9a4e-404b-4fb2-aa07-f5e33105f1e0.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk2MjgzNzgsIm5iZiI6MTc0OTYyODA3OCwicGF0aCI6Ii8xMzM1NDg1MDMvMjYwOTkzNjk0LWQwYmQ5YTRlLTQwNGItNGZiMi1hYTA3LWY1ZTMzMTA1ZjFlMC5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMVQwNzQ3NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NmFkZTFhY2EzOWU3YWU3MTU0NjE4ZDMxMWY5M2UxNjJhMjM0ZjMyZTMwYTUyZjE1NjY3MzYzNzc3ZjZkMWJiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.EGtyHL4JmZSFGEI44IKSXK0i6c40wOFxbxAPolGJmaY" alt="pic mcu temp controller">
+                                        <img src="media/temp_controller.png" alt="pic tempreture regulator">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">PIC-Based Temperature Regulator</h5>
+                                        <p class="card-text">Automatically adjusts fan speed based on ambient temperature using a PIC microcontroller.</p>
+                                        <div class="text-center">
+                                            <a href="https://github.com/rnshalinda/Automated_Tempreture_regulating_AC_fan_speed_control?tab=readme-ov-file" class="btn btn-primary">Check</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 4 -->
+                            <div class="swiper-slide">
+                                <!-- <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300"> -->
+                                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                                    <img class="card-img" src=".." class="card-img-top" alt="Bill">
+                                    <div class="card-body">
+                                        <h5 class="card-title">...</h5>
+                                        <p class="card-text">...</p>
+                                        <div class="text-center">
+                                            <a href="https://github.com/rnshalinda/FireSight_Guardian_ML_FireDetection_System" class="btn btn-primary">Check</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <!-- Col - Project Card 1 -->
-                        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                            <img class="card-img" src="media/FS_guardian.jpg" class="card-img-top" alt="FireSight Guardian">
-                            <div class="card-body">
-                                <h5 class="card-title">FireSight Guardian</h5>
-                                <p class="card-text">Vision-based ML fire detection using ESP32-CAM & Jetson Nano. Fast, scalable, edge-powered
-                                    system.</p>
-                                <div class="text-center">
-                                    <a href="https://github.com/rnshalinda/FireSight_Guardian_ML_FireDetection_System" class="btn btn-primary">Check</a>
-                                </div>
-                            </div>
                         </div>
-                        <!-- Col - Project Card 2 class="card-img-small" -->
-                        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-img">
-                                <img src="media/epuck.PNG" alt="e-puck">
-                                <img src="media/ezgif-1.gif" alt="navigation-sims">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">E-Puck Maze Explorer Robot</h5>
-                                <p class="card-text"> E-Puck robot autonomously navigates a maze to detect colored walls in a specific sequence, 
-                                    showcasing path planning & PID control algorithm.</p>
-                                <div class="text-center">
-                                    <a href="https://github.com/rnshalinda/Webots_MazeChallenge_Epuck_ColorNav" class="btn btn-primary">Check</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Col - Project Card 3 -->
-                        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                            <img class="card-img" src="FS_guardian.jpg" class="card-img-top" alt="FireSight Guardian">
-                            <div class="card-body">
-                                <h5 class="card-title">FireSight Guardian</h5>
-                                <p class="card-text">Vision-based ML fire detection using ESP32-CAM & Jetson Nano. Fast, scalable, edge-powered
-                                    system.</p>
-                                <div class="text-center">
-                                    <a href="https://github.com/rnshalinda/FireSight_Guardian_ML_FireDetection_System" class="btn btn-primary">Check</a>
-                                </div>
-                            </div>
-                        </div>
- 
                     </div>
+                    <!-- Navigation Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-
-
-
-
             </section>
 
-        </section>
+        </div>
+        <!-- AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- External Js Script -->
+    <script src="script.js"></script>
     </body>
 </html>
