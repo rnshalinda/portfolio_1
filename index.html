@@ -27,9 +27,9 @@
  
     </head>
     <body>
-        <div>
+        <div class="sticky-top">
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container">
                     <a class="navbar-brand" href="#">@ Portfolio</a>
                     <button class="navbar-toggler" type="button"
@@ -98,18 +98,19 @@
             <!-- Projects Section -->
             <section id="projects" class="projects-section">
                 <div class="container">
-                    <h2 class="section-title text-center mb-5" data-aos="fade-up">Projects</h2>
-
+                    <h2 class="section-title text-center mb-5" data-aos="zoom-in" data-aos-delay="400">
+                        <span class="symbol-hash">#</span> <span class="title-word">Projects</span>
+                    </h2>
                     <!-- Card Slider -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             
                             <!-- Project Card 1 -->
                              <div class="swiper-slide">
-                                <div class="card" data-aos="fade-up" data-aos-delay="300">
-                                    <img class="card-img" src="media/FS_guardian.jpg" class="card-img-top" alt="FireSight Guardian">
+                                <div class="card" data-aos="flip-left" data-aos-delay="500">
+                                    <img class="card-img" src="media/FS_guardian.jpg" class="card-img-top" alt="FireSight-Guardian">
                                     <div class="card-body">
-                                        <h5 class="card-title">FireSight Guardian</h5>
+                                        <h5 class="card-title">FireSight Guardian (Python, C++, YOLOv5, OpenCV, Pytorch)</h5>
                                         <p class="card-text">Vision-based ML fire detection using ESP32-CAM & Jetson Nano. Fast, scalable, edge-powered
                                             system.</p>
                                         <div class="text-center">
@@ -121,7 +122,7 @@
                             <!-- Project Card 2  -->
                             <div class="swiper-slide">
                                 <!-- <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300"> -->
-                                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="card" data-aos="flip-left" data-aos-delay="600">
                                     <div class="card-img">
                                         <img src="media/epuck.PNG" alt="e-puck">
                                         <img src="media/ezgif-1.gif" alt="navigation-sims">
@@ -139,13 +140,13 @@
                             <!-- Project Card 3 -->
                             <div class="swiper-slide">
                                 <!-- <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300"> -->
-                                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="card" data-aos="flip-left" data-aos-delay="700">
                                     <div class="card-img">
                                         <img class="card-img" src="media/project3_pic.PNG" alt="pic mcu temp controller">
                                         <img src="media/temp_controller.png" alt="pic tempreture regulator">
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">PIC-Based Temperature Regulator (C)</h5>
+                                        <h5 class="card-title">PIC MCU Temperature Regulator (C)</h5>
                                         <p class="card-text">Automatically adjusts fan speed based on ambient temperature using a PIC microcontroller.</p>
                                         <div class="text-center">
                                             <a href="https://github.com/rnshalinda/Automated_Tempreture_regulating_AC_fan_speed_control?tab=readme-ov-file" class="btn btn-primary">Check</a>
@@ -156,13 +157,13 @@
                             <!-- Project Card 4 -->
                             <div class="swiper-slide">
                                 <!-- <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300"> -->
-                                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="card" data-aos="flip-left" data-aos-delay="800">
                                     <div class="card-img">
                                         <img class="card-img" src="media/iHungry_home.PNG" alt="iHungry_home">
                                         <img class="card-img" src="media/pos.gif" alt="iHungry_po">
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">POS System (Java)</h5>
+                                        <h5 class="card-title">POS System (Java OOP)</h5>
                                         <p class="card-text">A Java Swing GUI application to manage daily customer orders for a fast-paced burger shop.</p>
                                         <div class="text-center">
                                             <a href="https://github.com/rnshalinda/iHungry-pos-system-Java-Swing" class="btn btn-primary">Check</a>
