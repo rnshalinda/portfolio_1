@@ -122,8 +122,8 @@ body {
 
 /* Project Titile */
 .section-title {
-  padding-top: 40px;
-  padding-bottom: 10px;
+  /* padding-top: 60px; */
+  padding-bottom: 15px;
 }
 
 .title-word {
@@ -147,7 +147,7 @@ body {
   font-family: 'Courier New', monospace; 
   font-weight: bold;
   font-size: 2.2rem;
-  /* margin-right: 0px; */
+  /* margin-right: 10px; */
 }
 
 
@@ -164,16 +164,12 @@ body {
   border-radius: 10px;
 }
 
-/* .card-img-small {
-  width: 90%;
-  margin: 0 auto;
-  display: block;
-  margin-top: 20px;
-} */
-
 .card {
-  /* width: 400px; */
-  width: 85%;
+  width: 100%;
+  max-width: 320px;
+  min-width: 200px;
+  height: auto;
+  /* margin: 0 10px;    Space between cards  */
   /* max-width: 350px; */
   background-color: #1a1a1a; 
   border: 2px solid #14a5ff; 
@@ -181,13 +177,12 @@ body {
   box-shadow: 0 0 15px rgba(20, 149, 255, 0.3); /* neon glow */
   color: #dddddd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* margin: 20px; */  /* Space between cards*/  
   backdrop-filter: blur(7px);
   background-color: rgba(26, 26, 26, 0.5); /* 0.5 transparent bg */
 }
 
 .card:hover {
-  /* transform: translateY(-5px); */
+  /* transform: translateY(-5px); */ /* card hover lisft effect*/
   box-shadow: 0 0 20px rgba(20, 173, 255, 0.8);
   z-index: 2;
 }
@@ -219,34 +214,105 @@ body {
   color: #1a1a1a;
 }
 
+.project-sections .container {  /* container width effects swiper area */
+  max-width: 70%;
+  padding: 60px 0; 
+  /* max-height: 50%;  */
+  padding-bottom: 80px 0;
+  /* padding-top: 40px; */
+}
+
 
 /* Project section Slider */
 
 .swiper {
   position: relative;
-  /* padding: 0 40px; */
+  padding: 0 !important;
+  margin: 0 auto; /* centers swiper wrapper itself */
+  max-width: 90%;
 }
 
 .swiper-slide {
+  width: auto; /* or a fixed %, like 80% */
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-left: 10px;
-  margin: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 80px; */
+  /* padding: 20px; */
+  /* padding-bottom: 100px; */
+  /* padding-left: 10px; */
+  /* margin: 20px; */
+}
+
+.swiper-wrapper {
+  align-items: center;
 }
 
 .swiper-button-next {
-  right: 330px !important; /* move right arrow position */
+  right: 130px !important; /* move right arrow position */
 }
 
 .swiper-button-prev {
-  left: 300px !important; /* move left arrow position */
+  left: 100px !important; /* move left arrow position */
 }
-
 
 /* End */
 
-/* .projects-section .container {
-  padding: 100px 100px;
+
+/* Skills Section */
+/* .section-title_skills{
+  padding-bottom: 40px 0;
 } */
 
+.skills-sections{
+  padding: 60px 0;
+}
+
+.category-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.skill-card {
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05); /* subtle translucent */
+  border: 1px solid rgba(114, 187, 255, 0.91); /* soft border */
+  backdrop-filter: blur(6px);  /* frosted glass effect */
+
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(12, 253, 249, 0.3); /* glowing shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  /* glow & jump up on hover  */
+  /* transform: translateY(-5px); 
+  box-shadow: 0 8px 25px rgba(24, 228, 255, 0.685); */
+
+  /* glow & popup on hover */
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(12, 253, 249, 0.45); 
+}
+
+.skill-card img {
+  width: 80px;
+  /* height: 80px; */
+  object-fit: contain;
+  /* margin-bottom: 10px; */
+  margin: 10px 0;
+}
