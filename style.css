@@ -39,55 +39,167 @@ body {
 /* End */
 
 
+/* About - Hero section */
 
-/* About section CSS */
-#intro-section {
-  background-color: #1a1a1a;
-  box-shadow: 0 -1px 10px #39ff14;
+.hero-buttons{
+  padding-top: 18px;
 }
 
-
-#intro-section h2 {
-  font-family: 'Inter', sans-serif;
-  color: #0de82a;
-  text-shadow: 0 0 5px #39ff14;
-}
-
-#intro-section p {
-  font-family: 'Inter', sans-serif; 
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #dddddd;
-  letter-spacing: 0.5px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.dp-img {
-  margin-left: 20px;
-  width: 330px;
-  padding: 18px; 
-  border: 3px dashed #27a92f;
-}
-
-.about-section {
-  position: relative; 
-  background: radial-gradient(circle, rgba(22, 84, 254, 0.365), transparent 75%);
+.about-hero {
+  background-color: #0f1115;
+  padding: 80px 0;
   color: white;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  overflow: hidden; 
+  background: radial-gradient(circle, rgba(22, 84, 254, 0.365), transparent 75%);
+  /* overflow: hidden; */
 }
 
-.about-section::before {
+.about-hero::before {
   content: "";
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.55); 
-  z-index: 0;
+  z-index: -1;
 }
-/* end */
+
+.hero-container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+}
+
+.hero-text{
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  color: #ddd;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.hero-text h4 {
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+.highlight-role {
+  color: #00f0ff;
+  font-weight: 600;
+}
+
+.hero-text p {
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 1.6;
+  max-width: 500px;
+  color: #ccc;
+}
+
+.btn-cv {
+  background-color: transparent;
+  border: 2px solid #00f0ff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #00f0ff;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: 0.3s ease;
+}
+
+.btn-cv:hover {
+  background-color: #00f0ff;
+  color: #000;
+}
+
+.socials{
+  padding-right: 200px;
+}
+
+.socials a {
+  margin-right: 15px;
+  color: #00f0ff;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.socials a:hover {
+  color: #fff;
+}
+
+.hexagon-wrapper:hover {
+  transform: scale(1.05) rotate(90deg);
+  filter: grayscale(0%) brightness(95%) contrast(110%);
+}
+
+.hexagon-wrapper {
+  transition: all 0.4s ease;
+  width: 370px;
+  height: 370px;
+  aspect-ratio: 1 / 1;
+  filter: grayscale(120%) brightness(95%) contrast(110%);
+  background: #0059ff; /* dp bg theme color 006eff */
+  clip-path: polygon(
+    25% 6.7%, 
+    75% 6.7%, 
+    100% 50%, 
+    75% 93.3%, 
+    25% 93.3%, 
+    0% 50%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  /* filter: drop-shadow(0 0 8px #00f0ff); */
+  /* padding: 15px; Inner spacing */
+  /* border: 3px dashed #27a92f; */
+
+  transform: rotate(90deg);           /* Rotate hexagon */
+  border-radius: 0;                   /* Softens corners (not perfect round, but helps) */
+  overflow: visible;
+}
+
+/* Neon glow using a pseudo-element */
+.hexagon-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #00f0ff;
+  clip-path: inherit;
+  z-index: -1;
+  filter: blur(200px);
+  opacity: 0.6;
+}
+
+.dp-img {
+  padding-left: 5px;
+  padding-top: 10px;
+  width: 83.5%;
+  height: auto;
+  border-radius: 10px; /* Slight rounding inside hex */
+  /* object-fit: cover; */
+  transform: rotate(-90deg);           /* Counter rotate image to keep it straight */
+}
+
+
+/* .dp-img {
+  margin-left: 20px;
+  width: 330px;
+  padding: 18px; 
+  border: 3px dashed #27a92f;
+} */
 
 
 
@@ -121,6 +233,7 @@ body {
 
 
 /* Project Titile */
+
 .section-title {
   /* padding-top: 60px; */
   padding-bottom: 15px;
@@ -130,7 +243,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 1.9rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1.25px;
   color: #ffd814;
   text-shadow: 0 0 10px #ff7c309b;
 }
@@ -152,6 +265,7 @@ body {
 
 
 /* Project cards */
+
 .card img {
   /* width: 80%;
   height: 60%; */
@@ -286,7 +400,7 @@ body {
 }
 
 .skill-card {
-  width: 100px;
+  width: 90px;
   border-radius: 10px;
   padding: 5px;
   text-align: center;
@@ -310,9 +424,9 @@ body {
 }
 
 .skill-card img {
-  width: 80px;
-  /* height: 80px; */
+  width: 70px;
+  height: 70px;
   object-fit: contain;
   /* margin-bottom: 10px; */
-  margin: 10px 0;
+  margin: 7px 0;
 }
