@@ -22,15 +22,16 @@
         <!-- Swiper CSS -->
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-        <!-- icons pack png from -   - https://devicon.dev/ -->
+        <!-- icons project sec - https://devicon.dev/ -->
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <!-- icons hero sec -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
-          
-
-
- 
+    
     </head>
+
+
     <body>
+        
         <div class="sticky-top">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -46,29 +47,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">  <!-- to place nav items to right -->
                             <li class="nav-item">
-                                <section id="home">        
-                                    <a class="nav-link active py-4 ps-5" aria-current="page" href="#home">Home</a>  <!-- py-3 ps-5 padding spacing top bottom, right to left-->
-                                </section>
+                                <a class="nav-link active py-4 ps-5" aria-current="page" href="#home">Home</a>  <!-- py-3 ps-5 padding spacing top bottom, right to left-->
                             </li>
                             <li class="nav-item">
-                                <section id="about">
-                                    <a class="nav-link py-4 ps-5" href="#about">About</a>
-                                </section>
+                                <a class="nav-link py-4 ps-5" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <section id="projects">
-                                    <a class="nav-link py-4 ps-5" href="#projects">Projects</a>
-                                </section>
+                                <a class="nav-link py-4 ps-5" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <section id="skills">
-                                    <a class="nav-link py-4 ps-5" href="#skills">Skills</a>
-                                </section>
+                                <a class="nav-link py-4 ps-5" href="#skills">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <section id="contact">
-                                    <a class="nav-link py-4 ps-5" href="#">Contact</a>
-                                </section>
+                                <a class="nav-link py-4 ps-5" href="#">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -77,7 +68,7 @@
         </div>
 
         <!-- About -->
-        <section class="about-hero">
+        <section id="about" class="about-hero">
             <div class="container hero-container">
                 <div class="row">
                     <!-- Left Text -->
@@ -95,14 +86,11 @@
                                     <div class="socials col">
                                         <a href="https://github.com/rnshalinda"><i class="fab fa-github"></i></a>
                                         <a href="https://www.linkedin.com/in/rnshalinda/"><i class="fab fa-linkedin"></i></a>
-                                        <a href="nsrhewa@gmail.com"><i class="fas fa-envelope"></i></a>
+                                        <a href="mailto:nsrhewa@gmail.com"><i class="fas fa-envelope"></i></a>
                                     </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- img-wrapper
-                    hero-img -->
 
                     <!-- Right Image -->
                     <div class="col-lg-5 col-md-12 text-center" data-aos="fade-left" data-aos-duration="1000">
@@ -118,7 +106,7 @@
         <div class="bg-wrapper">    <!-- bg image -->
 
             <!-- Projects Section -->
-            <section class="project-sections">
+            <section id="projects" class="project-sections">
                 <div class="container">
                     <h2 class="section-title text-center mb-5" data-aos="fade-up" data-aos-delay="700">
                         <span class="symbol-hash">#</span><span class="title-word">Projects</span>
@@ -203,7 +191,7 @@
         
         </div>
         <!-- skills Section -->  <!-- icons - https://devicon.dev/ -->
-        <section class="skills-sections">
+        <section id="skills" class="skills-sections">
             <div class="container">
                 <h2 class="section-title-skills text-center mb-5" data-aos="fade-up" data-aos-delay="400">
                     <span class="symbol-hash">#</span><span class="title-word">Skills</span>
@@ -278,7 +266,7 @@
             </div>
         </section>
 
-        
+        <section id="contact"></section>
 
         <!-- AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
